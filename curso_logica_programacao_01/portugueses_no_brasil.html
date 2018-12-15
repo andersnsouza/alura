@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idadeMediaParaUmCasalTerFilho = 28;
+    var chegadaDosPortuguesesNoBrasil = 1500;
+    var anoAtual = 2018;
+    var anosQueSePassaram = anoAtual - chegadaDosPortuguesesNoBrasil;
+    var geracoesQueSePassaram = anosQueSePassaram / idadeMediaParaUmCasalTerFilho;  
+
+    mostra("Passaram " + Math.round(geracoesQueSePassaram) + " gerações desde a chegada dos portugueses em 1500");
+
+
+
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+    var mensagemErrou = "Já era, você errou!";
+    var quantidadeMensagem = 0;
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+    while(contador >= 0){
+        mostra(contador);
+        contador -= 1;
+    }
+
+</script>

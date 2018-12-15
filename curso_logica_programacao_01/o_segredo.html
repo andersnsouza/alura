@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<input type="text">
+<button>Verifica segredo</button>
+
+<script>
+    var segredos = [];
+    var input = document.querySelector("input");
+    input.focus();
+    var button = document.querySelector("button");
+
+    function sorteio(){
+
+        return Math.round(Math.random() * 10);
+    }
+
+    function gerarNumeros(n){
+        var segredos = [];
+        var contador = 1;
+        var numeroSorteado;
+        while(contador <= n)
+            var achou = false;{
+            numeroSorteado = sorteio();
+            for(var posicao = 0; posicao < segredos.length; posicao++){
+                if(numeroSorteado == segredos[posicao]){
+                    achou = true;
+                    break;
+                }
+            }
+            if(achou == false){
+                segredos.push(numeroSorteado);
+                contador++;
+            } 
+        }
+        return segredos;
+    }
+
+    function verifica(){
+
+        for(var posicao = 1; posicao <= segredos.length; posicao++){
+
+            if(input.value == segredos[posicao]){
+
+                document.write("VOCÊ ACERTOU!");
+                break;
+            } else{
+
+                document.write("VOCÊ ERROU!");
+            }
+        }
+    }
+
+    segredos = gerarNumeros(4);
+    console.log(segredos);
+    button.onclick = verifica;
+    
+</script>

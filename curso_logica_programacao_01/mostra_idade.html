@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase){
+
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+
+    var anoAtual = 2018;
+    var minhaIdade = 29;
+    var idadeDoAdriano = 40;
+    var idadeDoPaulo = 50;
+
+    mostra("Eu nasci em " + (anoAtual - minhaIdade));
+    mostra("Adriano nasceu em " + (anoAtual - idadeDoAdriano));
+    mostra("Paulo nasceu em " + (anoAtual - idadeDoPaulo));
+
+</script>
